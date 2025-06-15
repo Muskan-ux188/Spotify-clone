@@ -1,0 +1,243 @@
+
+*{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+body{
+    background-color: black;
+}
+.sidebar{
+    background-color:black;
+    width: 330px;
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.main_content{
+    background-color: rgba(255, 255, 255, 0.085);
+    border-radius: 1rem;
+    overflow: auto;
+    flex: 1;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+    height: 100vh;
+}
+.main{
+    height: 100vh;
+    display: flex;
+}
+.sidebar .nav{
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.134);
+    border-radius: 1rem;
+    margin-bottom: 10px;
+    align-content: center;
+}
+.sidebar .library{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.085);
+    border-radius: 1rem;
+}
+ a,i{
+    line-height: 40px;
+    color:rgba(128, 128, 128, 0.849);
+    text-decoration: none;
+    margin: 15px 20px 20px 20px;
+    transition: 0.2s;
+}
+.nav .opt:hover{
+    a,i{
+        color: white;
+    }
+}
+.nav .opt{
+    align-content: center;
+}
+.library .lib_head{
+    display: flex;
+    margin-bottom: 20px;
+}
+.library .lib_head img{
+    margin: 20px;
+}
+.library .lib_head i{
+    align-content: center;
+}
+.library .lib_head:hover{
+    a,i{
+    color: white;
+}
+}
+.cards{
+    height: fit-content;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.048);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    transition: 0.2s;
+    h3,p{
+        color: white;
+        margin-left: 20px;
+    }
+    button{
+        border-radius: 1rem;
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif;
+        margin-top: 0;
+        margin-left: 20px;
+        width: fit-content;
+        margin-bottom: 10px;
+    }
+}
+.cards:hover{
+    background-color:rgba(255, 255, 255, 0.167) ;
+}
+.song_card{
+    height: 340px;
+    width: 228px;
+    background-color: rgba(255, 255, 255, 0.181);
+    border-radius: 1rem;
+    padding: 14px;
+    transition: 0.2s;
+    margin-right: 10px;
+    img{
+        width: 100%;
+        border-radius: 1rem;
+    }
+    vidoe{
+        width: 100%;
+        border-radius: 1rem;
+    }
+    h4{
+        color: white;
+    }
+    p{
+        color: grey;
+    }
+}
+.song_card:hover{
+    background-color:rgba(255, 255, 255, 0.27) ;
+}
+.main_content .navigation{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(21, 21, 21);
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    button{
+        border-radius: 1rem;
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif;
+        margin-top: 0;
+        margin-left: 20px;
+        width: fit-content;
+        margin-bottom: 10px;
+    }
+}
+.main_content .card_info{
+    height: fit-content;
+    width: 100%;
+    h3{
+        color: white;
+    }
+}
+.main_content .card_info .card_container{
+    display: flex;
+}
+.playarea{
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    position: sticky;
+}
+.curr{
+    background-color:rgb(6, 5, 5);
+    width:500px;
+    height:100%;
+    display: flex;
+    align-items: center;
+} 
+.curr .songimg img{
+    margin: 5px;
+    height:70px;
+    width: 70px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 1rem;
+    position: relative;
+    top: 30px;
+}
+.curr .curr_songinfo div{
+    align-items: center;
+    height: 30px;
+    position: relative;
+    left: 95px;
+    bottom: 38px;
+    .songname{
+        font-size: 100px;
+    }
+}
+.curr_songinfo .songname{
+    font-size: 20px;
+    color: white;
+}
+.curr_songinfo .songinfo{
+    font-size: 15px;
+    color: grey;
+}
+.controls{
+    background-color: rgb(7, 7, 13);
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.controls .ctrl_img{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.controls .ctrl_img img{
+    height: 20px;
+    margin: 0px 20px;
+}
+#playbtn{
+    height: 30px;
+}
+.control_bar{
+    align-items: center;
+    input{
+        width: 300px;
+    }
+    span{
+        align-items: center;
+        color: white;
+    }
+}
+.others{
+    background-color:black;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.others img{
+    height: 20px;
+}
